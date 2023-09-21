@@ -1,0 +1,14 @@
+
+<div class="content">
+    <img mat-card-image src={{thisProduct.imageurl}}> 
+    <div class="content2"><h2>{{thisProduct.name}}</h2>
+    <p>{{thisProduct.description}}</p>
+   <h3>Notes: {{thisProduct.notes}}</h3>
+    <p>$ {{thisProduct.price}}</p>
+    <button> <a routerLink="/products">Back</a> </button>
+<button id="h" [routerLink]='["/edit", thisProduct.id]'>Edit</button>
+<button (click)="onDelete(thisProduct.id)" id="i">Delete</button>
+</div>
+<br> <br>
+
+</div>

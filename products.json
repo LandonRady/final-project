@@ -1,0 +1,68 @@
+{
+  "Coffee": [
+    {
+      "id": 1,
+      "name": "Buena Vista-Guatemala ",
+      "description": "Located along the Sierra Madre Mountains, 'Buena Vista,' meaning 'Beautiful View,' certainly lives up to its name as it overlooks the southern chain of volcanoes from a surreal elevation of 1900 meters. Our good friend and partner, Luis Pedro Zelaya, owns and operates the farm as well as the processing mill, Bella Vista, from which we receive some of our favorite Guatemalan coffees year after year - this being one of them.",
+      "price": 19,
+      "imageurl": "assets/img/CA_Buena_Vista_Website_Image.png",
+      "notes": "Cola, Plum, Brown Sugar"
+    },
+    {
+      "id": 2,
+      "name": "Kedamai-Ethiopia",
+      "description": "The Kedami Cooperative is a contributing member to the Kata Muduga Farmers Cooperative Union in the Oromia region of Ethiopia. An initial loan from the Union allowed the cooperative to build a washing station and purchase needed processing equipment. In two years time, Kedamai had repaid the loan in full. Since then, the Kedamai Cooperative has established an impressive economic system which highly regards their farmers, livelihoods, allowing 90% of the final price of their cherry going directly to them.",
+      "price": 23,
+      "imageurl": "assets/img/AF_Kedamai_Website_Image.png",
+      "notes": "Gooseberry, Croissant, Orange Zest"
+    },
+    {
+      "id": 4,
+      "name": "Hidden City Espresso",
+      "description": "This blend is crafted specifically to taste great as a straight espresso or balanced with milk. We think it makes the best cappuccino.",
+      "price": 14,
+      "imageurl": "assets/img/hiddencity.png",
+      "notes": "Apple, Caramel, Pecan"
+    },
+    {
+      "id": 5,
+      "name": "Sunset Blend - blend",
+      "description": "Our most balanced offering, the Sunset Blend is specifically blended for wonderful sweetness and body. This coffee pairs well with a wide range of foods.",
+      "price": 15,
+      "imageurl": "assets\\img\\BLEND_Sunset_Website_Image.png",
+      "notes": "Raisin, Sourdough, Dark Chocolate"
+    },
+    {
+      "id": 6,
+      "name": "Gichugu- Kenya",
+      "description": "The Gichugu Mill collects and processes cherries from the Gakundu Farmer’s Copperative. Formed in the 1970s, the mill has since served over eight hundred participating small lot producers. The Gichugu Mill exclusively employs a washed-processed method. This has allowed them to hone in their processing methods, instruct their members on better farm management, and ultimately produce a greater coffee.",
+      "price": 22,
+      "imageurl": "assets\\img\\AF_Gichugu_Website_Image.png",
+      "notes": "Grapefruit, Honeysuckle, Red Wine"
+    },
+    {
+      "id": 7,
+      "name": "El Puente- Honduras",
+      "description": "MARYSABEL and her husband MOISES had a vision for Honduras. At that time, Honduran coffee was largely neglected by producers and unsought after by buyers. Together, they saw their farm as an opportunity to change their country’s apathetic coffee culture, so they dedicated themselves to producing exceptional coffees. Their success was unprecedented. They have pursued excellence in their entire operation and become the leading coffee producers in Honduras. It is both a prize and a privilege to work with the Caballeros and to enjoy the coffees of Finca El Puente.",
+      "price": 18,
+      "imageurl": "assets\\img\\CA_El_Puente_Washed_Website_Image.png",
+      "notes": "Maple, Pear, Sourdough"
+    },
+    {
+      "id": 8,
+      "name": "Winnetka Heights",
+      "description": "Named after another one of our Oak Cliff neighborhoods, this seasonal blend of farm-sourced coffees is crafted for those who enjoy a brighter cup.",
+      "price": 18,
+      "imageurl": "assets\\img\\SEASONAL_BLEND_Winnetka_Heights_Website_Image.png",
+      "notes": "Butterscotch, Cherry, Strawberry Jam"
+    },
+    {
+      "id": 9,
+      "name": "Bosque- Guatemala",
+      "description": "Our long-time friend and partner, Luis Pedro Zelaya, helped us acquire this coffee. He owns and operates Bella Vista, the processing mill from which we receive the majority of our Guatemalan coffees. It is through our partnership with Luis Pedro that we find remarkable coffees like Bosque.",
+      "price": 19,
+      "imageurl": "assets/img/CA_Bosque_Website_Image.png",
+      "notes": "Butterscotch, Pistachio, Apple Juice"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+
+
+footer{
+    color: white;
+    padding: 1px;
+    background-color: #1A237E;
+}
+
+.footer {
+    margin-right: 130px;
+    margin-left: 130px;
+    display: flex;
+    justify-content: space-between;
+    
+}

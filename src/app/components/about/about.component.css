@@ -1,0 +1,27 @@
+.content {
+    margin: 40px;
+    display: flex;
+    align-items:center;
+    padding:100px
+}
+
+.content2{
+    margin-left: 30px;
+    font-size: 1.1em;
+    font-weight:400;
+    border-radius: 5px;
+    padding: 50px;
+    color: aliceblue;
+    margin-right: 30px;
+    background-color: #1A237E;
+    box-shadow: 5px 5px 2px #ccc;
+}
+img {
+    width: 20%;
+    
+    box-shadow: 3px 3px 2px #ccc;
+}
+
+p{
+    line-height: 1.5;
+}
