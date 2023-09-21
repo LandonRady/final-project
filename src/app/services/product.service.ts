@@ -40,4 +40,13 @@ export class ProductService {
   sortPriceDesc(): Observable<Coffee[]> {
     return this.http.get<Coffee[]>(this.dataSource + "?_sort=price&_order=desc");
   }
+
+  sortNameAscend(): Observable<Coffee[]> {
+    return this.http.get<Coffee[]>(this.dataSource + "?_sort=name");
+  }
+
+  sortNameDesc(): Observable<Coffee[]> {
+    return this.http.get<Coffee[]>(this.dataSource + "?_sort=name&_order=desc");
+  }
+
 }

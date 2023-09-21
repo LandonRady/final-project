@@ -22,6 +22,7 @@ import { FormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { NotfoundComponent } from './components/notfound/notfound.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 
@@ -35,7 +36,8 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
     NewComponent,
     EditComponent,
     NavigationPageComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

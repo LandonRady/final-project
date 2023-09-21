@@ -2,39 +2,41 @@
 <div class="heading">
 
     <button mat-raised-button color="primary" id="create" routerLink="/new">Create New Coffee</button>
-    
+
 </div>
 <br><br>
 <div class="sortPrice">
-    <p>Sort Price: </p>
+    <app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
+    <h3>Sort: </h3>
     <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-        <mat-button-toggle (click)="sortPriceAscend()" value="bold">Ascend</mat-button-toggle>
-        <mat-button-toggle (click)="sortPriceDesc()" value="italic">Descend</mat-button-toggle>
-        
-      </mat-button-toggle-group>
+        <mat-button-toggle (click)="togglePrice()" value="bold">Price: High/Low</mat-button-toggle>
+        <mat-button-toggle (click)="toggleName()" value="italic">Name: Asc/Desc</mat-button-toggle>
+
+    </mat-button-toggle-group>
 </div>
 
 <div class="content" *ngFor="let p of coffeeList">
+    <div *ngIf="searchText === '' || p.name.toLowerCase().includes(searchText) || p.name.includes(searchText) ">
+        <mat-card class="card">
+            <mat-card-header>
+                <div mat-card-avatar class="image1"></div>
+                <mat-card-title>{{p.name}}</mat-card-title>
 
-    <mat-card class="card">
-        <mat-card-header>
-            <div mat-card-avatar class="image1"></div>
-            <mat-card-title>{{p.name}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src={{p.imageurl}}>
 
-        </mat-card-header>
-        <img mat-card-image src={{p.imageurl}}>
-        
-        <mat-card-content>
-            <hr>
-            <p>
-                $ {{p.price}}
-            </p>
-            <br>
-            <button class="btn"><a [routerLink]='["/products", p.id]'>View</a></button>
-            <button [routerLink]='["/edit", p.id]' class="btn" id="h">Edit</button>
-            <button (click)="onDelete(p.id)" class="btn" id="i">Delete</button>
-        </mat-card-content>
+            <mat-card-content>
+                <hr>
+                <p>
+                    $ {{p.price}}
+                </p>
+                <br>
+                <button class="btn"><a [routerLink]='["/products", p.id]'>View</a></button>
+                <button [routerLink]='["/edit", p.id]' class="btn" id="h">Edit</button>
+                <button (click)="onDelete(p.id)" class="btn" id="i">Delete</button>
+            </mat-card-content>
 
-    </mat-card>
+        </mat-card>
 
+    </div>
 </div>

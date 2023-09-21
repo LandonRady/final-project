@@ -14,7 +14,12 @@ constructor (private productService: ProductService, private router: Router) { }
   
 coffeeList: Coffee[] = []
 
-ascendPrice: Coffee[] = []
+searchText: string = '';
+
+onSearchTextEntered(searchValue: string) {
+this.searchText = searchValue;
+// console.log(this.searchText);
+}
 
 ngOnInit(): void {
   this.loadProducts();
@@ -47,5 +52,40 @@ refreshPage() {
     this.coffeeList = result;
   })
  }
+ viewPrice: boolean = false;
+viewName:boolean = false;
+ togglePrice(){
+  if(this.viewPrice){
+    this.viewPrice = false;
+    this.sortPriceAscend();
+  }
+  else {
+    this.viewPrice = true;
+    this.sortPriceDesc();
+  }
+}
+
+toggleName(){
+  if(this.viewName){
+    this.viewName = false;
+    this.sortNameAscend();
+  }
+  else {
+    this.viewName = true;
+    this.sortNameDesc();
+  }
+}
+
+sortNameAscend() {
+  this.productService.sortNameAscend().subscribe(result => {
+    this.coffeeList = result;
+  })
+ }
+ sortNameDesc() {
+  this.productService.sortNameDesc().subscribe(result => {
+    this.coffeeList = result;
+  })
+ }
+
  
 }
